@@ -4,116 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css//style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Seung Kim</title>
 </head>
 <body>
-    <div class="main-layout">
-        <header>
-            <div class="container">
-                <a class="logo" href="#">Seung Kim</a>
-                <nav>
-                    <div class="hamburger-menu">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="desktop-nav">
-                        <ul class="nav-items">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Experience</a></li>
-                            <li><a href="#">Projects</a></li>
-                        </ul>
-                        <ul class="nav-items">
-                            <li><a href="#">Resume</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-nav">
-                        <ul class="nav-items">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Experience</a></li>
-                            <li><a href="#">Projects</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Resume</a></li>
-                        </ul>
-                    </div>
-                </nav> 
-            </div>
-        </header>
-        <main>
-            <div class="container">
-                <section id="hero" class="grid">
-                    <div class="hero_content">
-                        <p>Hello,</p>
-                        <h1>my <span>name is Seung Kim</h1>
-                        <h2>and I am a Software Developer</h2>
-                    </div>
-                    <div class="hero_image">
-                        <img src="./assets/images/profile.jpg" />
-                    </div>
-                </section>
-            </div>
-            <div class="container">
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <div class="project1">
-                        <img />
-                        <div class="project1_content">
-                            <h3>
-                                Project 1
-                            </h3>
-                            <p>Description</p>
-                            <div class="project3_content_links">
-                                <a></a>
-                                <a></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project2">
-                        <img />
-                        <div class="project2_content">
-                            <h3>
-                                Project 1
-                            </h3>
-                            <p>Description</p>
-                            <div class="project3_content_links">
-                                <a></a>
-                                <a></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project3">
-                        <img />
-                        <div class="project3_content">
-                            <h3>
-                                Project 1
-                            </h3>
-                            <p>Description</p>
-                            <div class="project3_content_links">
-                                <a></a>
-                                <a></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <section id="contact-me">
-                <div class="container">
-                    <form action="">
-                        <input placeholder="First Name" />
-                        <input placeholder="Last Name" />
-                        <input placeholder="Email" />
-                        <textarea name="" id=""></textarea>
-                    </form>
+   <nav id="nav">
+        <ul class="container">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+   </nav>
+    <article id="top" class="wrapper style1">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-5-large col-12-medium">
+                    <span class="image fit"><img src="images/profile.jpg" alt="" /></span>
                 </div>
-            </section>
-        </main>
-        <footer>
-            
-        </footer>
-    </div>
+                <div class="col-8 col-7-large col-12-medium">
+                    <header>
+                        <h1>Hi. I'm <strong>Simon</strong> Kim.</h1>
+                    </header>
+                    <p>And this is my <strong>Developer Portfolio</strong></p>
+                    <a href="#work" class="button large scrolly">Learn about what I do</a>
+                </div>
+            </div>
+        </div>
+    </article>
 </body>
 </html>

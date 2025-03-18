@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { RouterProvider, createBrowserRouter, Route, createRoutesFromElements } from 'react-router-dom';
+
 
 const App = () => {
   return (

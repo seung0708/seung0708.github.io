@@ -1,16 +1,21 @@
 import React from 'react';
-import App from './App.jsx';
+import App from './App';
 import './styles.css'
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from 'react-router-dom';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />} />
+  )
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-)
-
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
 
 // const names = [ 'Seung Kim', '승김']
 // const typingText = document.getElementById("typing-text")
@@ -44,4 +49,3 @@ root.render(
 // }
 
 // type();
-

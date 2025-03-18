@@ -1,10 +1,18 @@
 import React from 'react';
 import { RouterProvider, createBrowserRouter, Route, createRoutesFromElements } from 'react-router-dom';
-
+import Header from './components/Header'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Header />
+      <main>
+        
+      </main>
+      <footer>
+
+      </footer>
+    </>
   )
 }
 

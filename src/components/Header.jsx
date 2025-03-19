@@ -4,13 +4,15 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <header>
-        <div class="container">
-            <nav class="desktop_nav">
-                <div class="logo">SK</div>
-                <ul class="nav_links">
-                    <li class="nav_link"><a href="#about">About</a></li>
-                    <li class="nav_link"><a href="#projects">Projects</a></li>
-                    <li class="nav_link"><a href="#contact">Contact</a></li>
+        <div classNameName="container">
+            <nav classNameName="desktop_nav">
+              <div classNameName='logo'>
+                <div classNameName="logo">SK</div>
+              </div>
+                <ul className="nav_links">
+                    <li className="nav_link"><a href="#about">About</a></li>
+                    <li className="nav_link"><a href="#projects">Projects</a></li>
+                    <li className="nav_link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>

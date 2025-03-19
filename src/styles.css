@@ -57,6 +57,25 @@ header {
     margin-bottom: 32px;
 }
 
+  
+.main-text,
+.hover-text {
+    position: absolute;
+    transition: opacity 0.3s ease;
+}
+  
+.hover-text {
+    opacity: 0; /* Initially invisible */
+}
+  
+.logo:hover .main-text {
+    opacity: 0; 
+}
+  
+.logo:hover .hover-text {
+    opacity: 1;
+}
+
 nav {
     display: flex;
     justify-content: space-between;

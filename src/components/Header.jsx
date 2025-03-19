@@ -4,10 +4,11 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <header>
-        <div classNameName="container">
-            <nav classNameName="desktop_nav">
-              <div classNameName='logo'>
-                <div classNameName="logo">SK</div>
+        <div className="container">
+            <nav className="desktop_nav">
+              <div className='logo'>
+                <span className="main-text">Seung Kim</span>
+                <span className='hover-text'>김승현</span>
               </div>
                 <ul className="nav_links">
                     <li className="nav_link"><a href="#about">About</a></li>

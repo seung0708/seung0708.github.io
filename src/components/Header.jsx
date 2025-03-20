@@ -16,6 +16,9 @@ const Header = () => {
                 </ul>
             </nav>
         </div>
+        <div className='switch'>
+          <Sun />
+        </div>
     </header>
   )
 }

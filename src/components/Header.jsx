@@ -7,11 +7,13 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(true)
 
   const handleToggleClick = () => {
+    console.log(darkMode)
     if (darkMode) {
       setDarkMode(!darkMode)
       document.body.style.backgroundColor = '#000'
+      
     } else {
-      setDarkMode(darkMode)
+      setDarkMode(!darkMode)
       document.body.style.backgroundColor = '#FFF'
     }
     
@@ -29,12 +31,9 @@ const Header = () => {
                 </ul>
             </nav>
         </div>
-        <div classNameName='switch'>
+        <div className='switch'>
           <button onClick={handleToggleClick}>
-            <Sun />
-          </button>
-          <button onClick={handleToggleClick}>
-            <Moon />
+            {!darkMode ? <Sun /> : <Moon /> }
           </button>
         </div>
     </header>

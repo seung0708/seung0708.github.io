@@ -4,10 +4,10 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 
-const Main = () => {
+const Main = ({darkMode}) => {
   return (
     <main>
-        <Hero />
+        <Hero darkMode={darkMode} />
         <About />
         <Projects />
         <Contact />

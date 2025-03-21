@@ -1,20 +1,22 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import {Sun, Moon} from 'lucide-react';
 
-const Header = () => {
-  const [darkMode, setDarkMode] = useState(true)
-
+const Header = ({darkMode, setDarkMode}) => {
+  
   const handleToggleClick = () => {
     console.log(darkMode)
     if (darkMode) {
       setDarkMode(!darkMode)
       document.body.style.backgroundColor = '#000'
+      document.body.style.color = '#FFF'
+      
       
     } else {
       setDarkMode(!darkMode)
       document.body.style.backgroundColor = '#FFF'
+      document.body.style.color = '#000'
     }
     
   }
@@ -33,7 +35,7 @@ const Header = () => {
         </div>
         <div className='switch'>
           <button onClick={handleToggleClick}>
-            {!darkMode ? <Sun /> : <Moon /> }
+            {!darkMode ? <Sun style={{color: '#FFF'}} /> : <Moon /> }
           </button>
         </div>
     </header>

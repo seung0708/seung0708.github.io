@@ -8,8 +8,15 @@ body {
     height: 100vh;
     font-family: sans-serif;
     font-size: 16px;
-    background-color: #000;
     color: #E7E6DD
+}
+
+.dark {
+    background-color: #000;
+}
+
+.light {
+    
 }
 
 h1 {
@@ -31,12 +38,16 @@ a {
 }
 
 button {
-    display: inline-block;
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
     border: none;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-}
+    color: inherit;
+    font: inherit;
+  }
 
 section {
     height: 700px;
@@ -54,6 +65,7 @@ section {
 /* Header */
 
 header {
+    position: relative;
     margin-bottom: 32px;
 }
 
@@ -76,6 +88,14 @@ nav {
     color: #E8C766;
     text-decoration: underline;
 }
+
+.switch {
+    position: fixed;
+    right: 30px;
+    top: 35px;
+}
+
+
 
 @media only screen and (max-width: 480px)  {
     .logo, .nav_link a  {

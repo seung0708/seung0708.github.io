@@ -1,9 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 
-import {Sun} from 'lucide';
+import {Sun, Moon} from 'lucide-react';
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useState(true)
+
+  const handleToggleClick = () => {
+    if (darkMode) {
+      setDarkMode(!darkMode)
+      document.body.style.backgroundColor = '#000'
+    } else {
+      setDarkMode(darkMode)
+      document.body.style.backgroundColor = '#FFF'
+    }
+    
+  }
+
   return (
     <header>
         <div class="container">
@@ -17,7 +30,12 @@ const Header = () => {
             </nav>
         </div>
         <div className='switch'>
-          <Sun />
+          <button onClick={handleToggleClick}>
+            <Sun />
+          </button>
+          <button onClick={handleToggleClick}>
+            <Moon />
+          </button>
         </div>
     </header>
   )

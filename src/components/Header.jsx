@@ -19,17 +19,17 @@ const Header = () => {
 
   return (
     <header>
-        <div class="container">
-            <nav class="desktop_nav">
-                <div class="logo">SK</div>
-                <ul class="nav_links">
-                    <li class="nav_link"><a href="#about">About</a></li>
-                    <li class="nav_link"><a href="#projects">Projects</a></li>
-                    <li class="nav_link"><a href="#contact">Contact</a></li>
+        <div className="container">
+            <nav className="desktop_nav">
+                <div className="logo">SK</div>
+                <ul className="nav_links">
+                    <li className="nav_link"><a href="#about">About</a></li>
+                    <li className="nav_link"><a href="#projects">Projects</a></li>
+                    <li className="nav_link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <div className='switch'>
+        <div classNameName='switch'>
           <button onClick={handleToggleClick}>
             <Sun />
           </button>

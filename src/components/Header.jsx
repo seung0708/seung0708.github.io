@@ -31,13 +31,14 @@ const Header = ({darkMode, setDarkMode}) => {
                     <li className="nav_link"><a href="#projects">Projects</a></li>
                     <li className="nav_link"><a href="#contact">Contact</a></li>
                 </ul>
+                <div className='switch'>
+                  <button onClick={handleToggleClick}>
+                    {!darkMode ? <Sun style={{color: '#FFF'}} /> : <Moon /> }
+                  </button>
+                </div>
             </nav>
         </div>
-        <div className='switch'>
-          <button onClick={handleToggleClick}>
-            {!darkMode ? <Sun style={{color: '#FFF'}} /> : <Moon /> }
-          </button>
-        </div>
+        
     </header>
   )
 }

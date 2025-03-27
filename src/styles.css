@@ -68,9 +68,7 @@ header .container {
 }
 
 nav {
-    border: 1px solid black;
     display: flex;
-    justify-content: space-between;
     padding: 10px;
 }
 
@@ -88,10 +86,6 @@ nav {
     text-decoration: underline;
 }
 
-.switch {
-    position: relative;
-    top: 0px;
-}
 
 
 

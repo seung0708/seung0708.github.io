@@ -1,17 +1,26 @@
 import React, {useState} from 'react';
 import { RouterProvider, createBrowserRouter, Route, createRoutesFromElements } from 'react-router-dom';
-import Header from './components/Header'
-import Main from './components/Main';
-import Footer from './components/Footer';
+import './App.css'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true)
   return (
-    <>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Main darkMode={darkMode} />
-      <Footer />
-    </>
+    <div className='app'>
+      <Header />
+      <main> 
+        <Hero />
+        {/* <About />
+        <Projects />
+        <Contact /> */}
+      </main>
+      {/* <Footer /> */}
+    </div>
   )
 }
 

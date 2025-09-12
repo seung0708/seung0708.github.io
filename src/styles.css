@@ -20,12 +20,23 @@
     box-sizing: border-box;
 }
 
+body.light {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 body {
-    font-family: var(--font-base);
-    background-color: var(--color-bg);
-    color: #000;
-    line-height: 1.6;
-    font-size: 16px;
+  font-family: var(--font-base);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 h1 {

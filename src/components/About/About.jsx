@@ -40,22 +40,22 @@ const About = () => {
               My approach combines technical excellence with creative problem-solving, ensuring every project delivers both outstanding performance and exceptional user experience.
             </p>
           </div>
-        </div>
-        <div className="about-skills">
-            {skillsData.map((skill, index) => (
-              <div key={index} className="skill-card">
-                <div className="skill-header">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <h3 className="skill-title">{skill.category}</h3>
-                </div>
-                <div className="skill-items">
-                  {skill.items.map((item, i) => (
-                    <span key={i} className="skill-item">{item}</span>
-                  ))}
-                </div>
+          <div className="about-skills">
+          {skillsData.map((skill, index) => (
+            <div key={index} className="skill-card">
+              <div className="skill-header">
+                <div className="skill-icon">{skill.icon}</div>
+                <h3 className="skill-title">{skill.category}</h3>
               </div>
-            ))}
-          </div>
+              <div className="skill-items">
+                {skill.items.map((item, i) => (
+                  <span key={i} className="skill-item">{item}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        </div>
       </div>
     </section>
   )

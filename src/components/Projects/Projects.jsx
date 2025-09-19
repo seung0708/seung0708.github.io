@@ -1,6 +1,5 @@
 import React from 'react'
 import './Projects.css'
-import {ExternalLink, GitHub} from 'lucide-react'
 
 const projectsData = [
   {
@@ -63,7 +62,7 @@ const Projects = () => {
                                     rel="noopener noreferrer"
                                     className='project-link'
                                 >
-                                    <GitHub size={16} style={{marginRight: '8px'}} /> Code
+                                    {/* <GitHub size={16} style={{marginRight: '8px'}} /> Code */}
                                 </a>
                                 <a 
                                     href={project.live} 
@@ -71,7 +70,7 @@ const Projects = () => {
                                     rel="noopener noreferrer"
                                     className='project-link'
                                 >
-                                    <ExternalLink size={16} style={{marginRight: '8px'}} /> Live Demo
+                                    {/* <ExternalLink size={16} style={{marginRight: '8px'}} /> Live Demo */}
                                 </a>
                             </div>
                         </div>
